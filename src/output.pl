@@ -20,6 +20,7 @@ $R->run(q`library(ggplot2)`);
 $R->run(qq`data <- read.csv("priceIndex.txt")`);
 
 # plot the data as a line plot with each point outlined
+###THIS NEEDS TO BE HEAVILY EDITTED STILL
 $R->run(q`ggplot(data, aes(x=Month, y=CPI, colour=Category, group=Category)) + geom_line() + geom_point(size=2) + ggtitle("Alcohol vs Education Monthly Trends") + ylab("CPI Value") + xlab("Month") `);
 
 # close down the PDF device
